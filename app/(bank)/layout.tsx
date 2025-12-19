@@ -1,5 +1,4 @@
-import Sidebar from "@/components/layout/Sidebar";
-import Topbar from "@/components/layout/Topbar";
+import { Sidebar, Topbar } from "@/components/layout";
 
 export default function BankLayout({
   children,
@@ -7,9 +6,9 @@ export default function BankLayout({
   children: React.ReactNode;
 }) {
   return (
-    <div className="min-h-screen bg-zinc-950 text-zinc-100 flex">
+    <div className="flex min-h-screen bg-[#0B0F1A] text-white">
       <Sidebar />
-      <div className="flex-1 flex flex-col">
+      <div className="flex flex-col flex-1">
         <Topbar />
         <main className="p-6">{children}</main>
       </div>
